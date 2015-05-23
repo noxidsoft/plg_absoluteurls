@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>System - Absolute URLs</name>
+	<author>Noxidsoft - Noel M Dixon</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>Copyright (C) 2007-2013 Noxidsoft. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@noxidsoft.com</authorEmail>
+	<authorUrl>www.noxidsoft.com</authorUrl>
+	<version>2.5</version>
+	<description>This Plugin converts all your links into ABSOLUTE URLS.</description>
+	<files>
+		<filename plugin="absoluteurls">absoluteurls.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field	name="absoluteUrls" type="radio"
+					default="0"
+					description="Turn all your links into absolute URLS?"
+					label="Make absolute"
+				>
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field	name="secureUrl" type="radio"
+					default="0"
+					description="Is this URL using https?"
+					label="Using SSL"
+				>
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field name="urlFocus" 
+					type="text" 
+					default="" 
+					label="URL Focus" 
+					description="Enter a URL i.e. example.com or www.example.com or pre.example.com without the http://" 
+					filter="raw" />
+				<field name="excludedDir" type="textarea"
+					cols="10" rows="3"
+					label="Excluded first"
+					description="Exclude the first directory i.e. foo/example/somefile.html you would put 'foo' or '/foo', please place each one on a new line." />
+				<field name="includedDir" type="textarea"
+					cols="10" rows="3"
+					label="Included first"
+					description="Include a first directory that the filter misses i.e. foo/example/somefile.html you would put 'foo' or '/foo', please place each one on a new line." />
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
