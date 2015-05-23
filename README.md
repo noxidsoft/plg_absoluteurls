@@ -1,5 +1,5 @@
 # plg_absoluteurls
-This Plugin converts all your links into ABSOLUTE URLS.
+This Joomla Plugin converts all your links into ABSOLUTE URLS.
 
 ###Usage:###
 * Make absolute - Turn all your links into absolute URLS?
